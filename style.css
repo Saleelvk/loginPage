@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(110, 25, 247),
+    rgb(187, 73, 231)
+  );
+}
+
+.container {
+  margin: 150px auto;
+  width: 900px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 35px;
+}
+
+.left-side {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  left: 15%;
+  margin-top: 200px;
+}
+.left-side img {
+  width: 100%;
+  padding: 40px;
+  height: 100%;
+  background-color: rgb(209, 209, 209);
+}
+.left-side .img {
+  overflow: hidden;
+  width: 250px;
+  border-radius: 50%;
+  height: 250px;
+}
+.righside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 100px 30px 0 0px;
+}
+
+.righside h1 {
+  margin: 20px auto;
+}
+.righside input {
+  margin: 30px auto;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: rgb(209, 209, 209);
+  width: 100%;
+  color: black;
+}
+.righside .form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+}
+input.Login {
+  background-color: rgb(54, 197, 54);
+  color: white;
+  font-size: 20px;
+}
+.righside p {
+  margin-bottom: 60px;
+  color: black;
+}
+.righside span {
+  color: green;
+}
+.input-container i {
+  position: absolute;
+  top: 42%;
+  left: 2%;
+}
+.input-container {
+  position: relative;
+}
+
+@media (max-width: 372px) {
+  .left-side {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .container {
+    width: 100%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .righside {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 10px;
+  }
+  .righside input {
+    margin-top: 15px;
+  }
+  .input-container i {
+    position: absolute;
+    top: 32%;
+    left: 2%;
+  }
+
+  .input-container {
+    position: relative;
+  }
+}
